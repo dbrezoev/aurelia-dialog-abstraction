@@ -10,14 +10,14 @@ var _aureliaFramework = require('aurelia-framework');
 
 var _dialogOptions = require('./dialog-options');
 
-var CustomDialog = (function () {
-  function CustomDialog(dialogService) {
-    _classCallCheck(this, _CustomDialog);
+var Dialog = (function () {
+  function Dialog(dialogService) {
+    _classCallCheck(this, _Dialog);
 
     this.dialogService = dialogService;
   }
 
-  CustomDialog.prototype.confirm = function confirm(opts) {
+  Dialog.prototype.confirm = function confirm(opts) {
     opts = opts || {};
 
     if (!opts.msg) {
@@ -35,7 +35,7 @@ var CustomDialog = (function () {
     return this._showDialog(options);
   };
 
-  CustomDialog.prototype.showCustomViewModel = function showCustomViewModel(opts) {
+  Dialog.prototype.showCustomViewModel = function showCustomViewModel(opts) {
     opts = opts || {};
 
     if (opts.msg) {
@@ -49,7 +49,7 @@ var CustomDialog = (function () {
     return this._showDialog(opts);
   };
 
-  CustomDialog.prototype.showMessage = function showMessage(opts) {
+  Dialog.prototype.showMessage = function showMessage(opts) {
     opts = opts || {};
 
     if (opts.msg === undefined || opts.msg === '') {
@@ -66,7 +66,7 @@ var CustomDialog = (function () {
     this._showDialog(messageOptions);
   };
 
-  CustomDialog.prototype._showDialog = function _showDialog(options) {
+  Dialog.prototype._showDialog = function _showDialog(options) {
     var resultPromise = this.dialogService.open({ viewModel: _dialogOptions.DialogOptions, model: options }).then(function (result) {
       return new Promise(function (resolve, reject) {
         if (!result.wasCancelled) {
@@ -81,9 +81,9 @@ var CustomDialog = (function () {
     return resultPromise;
   };
 
-  var _CustomDialog = CustomDialog;
-  CustomDialog = _aureliaFramework.inject(_aureliaDialog.DialogService)(CustomDialog) || CustomDialog;
-  return CustomDialog;
+  var _Dialog = Dialog;
+  Dialog = _aureliaFramework.inject(_aureliaDialog.DialogService)(Dialog) || Dialog;
+  return Dialog;
 })();
 
-exports.CustomDialog = CustomDialog;
+exports.Dialog = Dialog;

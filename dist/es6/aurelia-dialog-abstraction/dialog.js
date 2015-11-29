@@ -3,7 +3,7 @@ import {inject} from 'aurelia-framework';
 import {DialogOptions} from './dialog-options';
 
 @inject(DialogService)
-export class CustomDialog {
+export class Dialog {
 
   constructor(dialogService) {
     this.dialogService = dialogService;
