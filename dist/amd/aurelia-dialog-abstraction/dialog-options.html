@@ -1,0 +1,17 @@
+
+<template>
+  <ai-dialog>
+    <ai-dialog-header>
+      <h2>${title}</h2>
+    </ai-dialog-header>
+    <ai-dialog-body>
+      <h2 if.bind="msg">${msg}</h2>
+      <compose if.bind="viewModel" view-model.bind="viewModel"></compose>
+    </ai-dialog-body>
+    <ai-dialog-footer>
+      <button if.bind="showCancelButton" click.trigger="controller.cancel()" class="btn btn-danger">${cancelBtnText}</button>
+      <button if.bind="viewModel" click.trigger="controller.ok(model)" class="btn btn-success">${okBtnText}</button>
+      <button if.bind="!viewModel" click.trigger="controller.ok()" class="btn btn-success">${okBtnText}</button>
+    </ai-dialog-footer>
+  </ai-dialog>
+</template>
