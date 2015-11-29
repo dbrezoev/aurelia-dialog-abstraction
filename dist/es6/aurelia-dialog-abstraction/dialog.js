@@ -59,7 +59,7 @@ export class CustomDialog {
   }
 
   _showDialog(options) {
-    let resultPromise = this.dialogService.open({ viewModel: Dialog, model: options } ).then((result) => {
+    let resultPromise = this.dialogService.open({ viewModel: DialogOptions, model: options } ).then((result) => {
       return new Promise((resolve, reject) => {
         if (!result.wasCancelled) {
 

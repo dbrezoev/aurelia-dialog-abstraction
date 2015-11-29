@@ -62,7 +62,7 @@ define(['exports', 'aurelia-dialog', 'aurelia-framework', './dialog-options'], f
     };
 
     CustomDialog.prototype._showDialog = function _showDialog(options) {
-      var resultPromise = this.dialogService.open({ viewModel: Dialog, model: options }).then(function (result) {
+      var resultPromise = this.dialogService.open({ viewModel: _dialogOptions.DialogOptions, model: options }).then(function (result) {
         return new Promise(function (resolve, reject) {
           if (!result.wasCancelled) {
 
