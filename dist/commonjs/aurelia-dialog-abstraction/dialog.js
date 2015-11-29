@@ -63,7 +63,7 @@ var Dialog = (function () {
       showCancelButton: false
     };
 
-    this._showDialog(messageOptions);
+    return this._showDialog(messageOptions);
   };
 
   Dialog.prototype._showDialog = function _showDialog(options) {

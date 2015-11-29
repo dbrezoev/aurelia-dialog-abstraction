@@ -55,7 +55,7 @@ export class Dialog {
       showCancelButton: false
     };
 
-    this._showDialog(messageOptions);
+    return this._showDialog(messageOptions);
   }
 
   _showDialog(options) {
