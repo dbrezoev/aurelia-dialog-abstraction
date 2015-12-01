@@ -6,6 +6,6 @@ template
       h2(if.bind="msg") ${msg}
       compose(if.bind="viewModel", view-model.bind="viewModel")
     ai-dialog-footer
-      button.btn.btn-danger(if.bind="showCancelButton", click.trigger='controller.cancel()') ${cancelBtnText}
-      button.btn.btn-success(if.bind="viewModel", click.trigger='controller.ok(model)') ${okBtnText}
-      button.btn.btn-success(if.bind="!viewModel", click.trigger='controller.ok()') ${okBtnText}
+      button.btn.btn-default(if.bind="showCancelButton", click.trigger='controller.cancel()') ${cancelBtnText}
+      button.btn.btn-default(if.bind="viewModel", click.trigger='controller.ok(model)') ${okBtnText}
+      button.btn.btn-default(if.bind="!viewModel", click.trigger='controller.ok()') ${okBtnText}

@@ -9,9 +9,9 @@
       <compose if.bind="viewModel" view-model.bind="viewModel"></compose>
     </ai-dialog-body>
     <ai-dialog-footer>
-      <button if.bind="showCancelButton" click.trigger="controller.cancel()" class="btn btn-danger">${cancelBtnText}</button>
-      <button if.bind="viewModel" click.trigger="controller.ok(model)" class="btn btn-success">${okBtnText}</button>
-      <button if.bind="!viewModel" click.trigger="controller.ok()" class="btn btn-success">${okBtnText}</button>
+      <button if.bind="showCancelButton" click.trigger="controller.cancel()" class="btn btn-default">${cancelBtnText}</button>
+      <button if.bind="viewModel" click.trigger="controller.ok(model)" class="btn btn-default">${okBtnText}</button>
+      <button if.bind="!viewModel" click.trigger="controller.ok()" class="btn btn-default">${okBtnText}</button>
     </ai-dialog-footer>
   </ai-dialog>
 </template>
