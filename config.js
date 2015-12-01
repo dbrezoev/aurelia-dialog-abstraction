@@ -7,16 +7,12 @@ System.config({
   },
 
   map: {
-    "Eonasdan/bootstrap-datetimepicker": "github:Eonasdan/bootstrap-datetimepicker@4.17.37",
     "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.9.0",
     "aurelia-framework": "github:aurelia/framework@0.13.2",
-    "aurelia-validation": "github:aurelia/validation@0.2.8",
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@0.9.18",
-    "jquery": "github:components/jquery@2.1.4",
     "moment": "github:moment/moment@2.10.6",
-    "select2/select2": "github:select2/select2@4.0.1",
     "traceur": "github:jmcriffey/bower-traceur@0.0.90",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.90",
     "github:aurelia/binding@0.8.6": {
@@ -77,12 +73,6 @@ System.config({
       "aurelia-path": "github:aurelia/path@0.8.1",
       "aurelia-task-queue": "github:aurelia/task-queue@0.6.2",
       "core-js": "npm:core-js@0.9.18"
-    },
-    "github:aurelia/validation@0.2.8": {
-      "aurelia-binding": "github:aurelia/binding@0.8.6",
-      "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.9.2",
-      "aurelia-logging": "github:aurelia/logging@0.6.4",
-      "aurelia-templating": "github:aurelia/templating@0.14.4"
     },
     "github:jspm/nodelibs-process@0.1.1": {
       "process": "npm:process@0.10.1"

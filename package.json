@@ -1,7 +1,7 @@
 {
-  "name": "aurelia-custom-common-files",
+  "name": "aurelia-dialog-abstraction",
   "version": "0.0.1",
-  "description": "common files and custom elements for aurelia.io",
+  "description": "an abstraction over aurelia dialog",
   "keywords": [
     "aurelia",
     "authorization",
@@ -9,11 +9,11 @@
   ],
   "homepage": "http://github.com/moshensky/aurelia-custom-common-files",
   "license": "MIT",
-  "author": "Nikita Moshensky <nikita@moshensky.com> (http://moshensky.com/)",
-  "main": "dist/commonjs/index.js",
+  "author": "D Brezoev & Nikita Moshensky",
+  "main": "dist/system/index.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/moshensky/aurelia-custom-common-files"
+    "url": "https://github.com/dbrezoev/aurelia-dialog-abstraction"
   },
   "jspm": {
     "main": "index",
@@ -22,13 +22,9 @@
       "lib": "dist/system"
     },
     "dependencies": {
-      "Eonasdan/bootstrap-datetimepicker": "github:Eonasdan/bootstrap-datetimepicker@^4.14.30",
       "aurelia-dependency-injection": "github:aurelia/dependency-injection@^0.9.0",
       "aurelia-framework": "github:aurelia/framework@^0.13.2",
-      "aurelia-validation": "github:aurelia/validation@^0.2.7",
-      "jquery": "github:components/jquery@^2.1.4",
       "moment": "github:moment/moment@^2.10.3",
-      "select2/select2": "github:select2/select2@^4.0.0",
       "traceur": "github:jmcriffey/bower-traceur@^0.0.90",
       "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88"
     },
