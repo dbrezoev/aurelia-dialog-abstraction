@@ -7,7 +7,7 @@
     "authorization",
     "plugin"
   ],
-  "homepage": "http://github.com/moshensky/aurelia-custom-common-files",
+  "homepage": "",
   "license": "MIT",
   "author": "",
   "main": "dist/system/index.js",
