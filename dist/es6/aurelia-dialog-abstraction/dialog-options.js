@@ -1,6 +1,6 @@
 import {DialogController} from 'aurelia-dialog';
 import {inject, bindable} from 'aurelia-framework';
-import 'aurelia-dialog/dialog.css!';
+import '../../jspm_packages/npm/aurelia-dialog@0.5.0/dialog.css!';
 
 @inject(DialogController)
 export class DialogOptions {
