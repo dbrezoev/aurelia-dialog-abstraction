@@ -8,8 +8,6 @@ var _aureliaDialog = require('aurelia-dialog');
 
 var _aureliaFramework = require('aurelia-framework');
 
-require('aurelia-dialog/dialog.css!');
-
 var DialogOptions = (function () {
   function DialogOptions(controller) {
     _classCallCheck(this, _DialogOptions);
