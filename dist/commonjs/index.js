@@ -9,5 +9,4 @@ exports.Dialog = _aureliaDialogAbstractionDialog.Dialog;
 
 function configure(aurelia) {
   aurelia.globalResources('./aurelia-dialog-abstraction/dialog-options');
-  aurelia.globalResources('./aurelia-dialog-abstraction/dialog');
 }

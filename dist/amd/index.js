@@ -7,6 +7,5 @@ define(['exports', './aurelia-dialog-abstraction/dialog'], function (exports, _a
 
   function configure(aurelia) {
     aurelia.globalResources('./aurelia-dialog-abstraction/dialog-options');
-    aurelia.globalResources('./aurelia-dialog-abstraction/dialog');
   }
 });
