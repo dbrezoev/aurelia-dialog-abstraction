@@ -9,7 +9,7 @@
   ],
   "homepage": "http://github.com/moshensky/aurelia-custom-common-files",
   "license": "MIT",
-  "author": "D Brezoev & Nikita Moshensky",
+  "author": "",
   "main": "dist/system/index.js",
   "repository": {
     "type": "git",
