@@ -7,4 +7,7 @@ var _aureliaDialogAbstractionDialog = require('./aurelia-dialog-abstraction/dial
 
 exports.Dialog = _aureliaDialogAbstractionDialog.Dialog;
 
-function configure(aurelia) {}
+function configure(aurelia) {
+  aurelia.globalResources('./aurelia-dialog-abstraction/dialog-options');
+  aurelia.globalResources('./aurelia-dialog-abstraction/dialog');
+}

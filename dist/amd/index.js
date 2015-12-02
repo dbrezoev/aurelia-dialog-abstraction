@@ -5,5 +5,8 @@ define(['exports', './aurelia-dialog-abstraction/dialog'], function (exports, _a
   exports.configure = configure;
   exports.Dialog = _aureliaDialogAbstractionDialog.Dialog;
 
-  function configure(aurelia) {}
+  function configure(aurelia) {
+    aurelia.globalResources('./aurelia-dialog-abstraction/dialog-options');
+    aurelia.globalResources('./aurelia-dialog-abstraction/dialog');
+  }
 });
