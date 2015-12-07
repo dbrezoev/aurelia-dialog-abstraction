@@ -1,4 +1,4 @@
-define(['exports', 'aurelia-dialog', 'aurelia-framework', '../../jspm_packages/npm/aurelia-dialog@0.5.0/dialog.css!'], function (exports, _aureliaDialog, _aureliaFramework, _jspm_packagesNpmAureliaDialog050DialogCss) {
+define(['exports', 'aurelia-dialog', 'aurelia-framework'], function (exports, _aureliaDialog, _aureliaFramework) {
   'use strict';
 
   exports.__esModule = true;
