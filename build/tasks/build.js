@@ -61,6 +61,10 @@ gulp.task('build-js-system', function () {
 
 gulp.task('build-system', ['build-html-system', 'build-css-system', 'build-js-system']);
 
+gulp.task('copy-css', function() {
+  return gulp.src(paths.aureliaDialogCss)
+    .pipe(gulp.dest(paths.output + 'system/aurelia-dialog-abstraction'));
+});
 
 gulp.task('compile-jade', function () {
   return gulp.src(paths.jade)
@@ -83,6 +87,7 @@ gulp.task('build', function(callback) {
     'compile-jade',
     'compile-less',
     ['build-es6', 'build-commonjs', 'build-amd', 'build-system'],
+    'copy-css',
     callback
   );
 });
